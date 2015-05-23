@@ -124,7 +124,7 @@ $(function(){
         stateSpanRequired = statePara.find('state-required');
         if (states.length > 0) {
           selected = parseInt(stateSelect.val());
-	  stateSelect.easyDropDown('destroy');
+	  // stateSelect.easyDropDown('destroy');
           stateSelect.html('');
           statesWithBlank = [
             {
@@ -140,8 +140,8 @@ $(function(){
             }
             return stateSelect.append(opt);
           });
-	  var newDrop = stateSelect.easyDropDown({ cutOff: 10 });
-	  newDrop.easyDropDown('enable');
+	  // var newDrop = stateSelect.easyDropDown({ cutOff: 10 });
+	  // newDrop.easyDropDown('enable');
           stateInput.hide().prop('disabled', true);
           statePara.show();
           stateSpanRequired.show();
